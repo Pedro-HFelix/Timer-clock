@@ -1,0 +1,5 @@
+export const controls       = document.getElementById('controls')
+export const musicControls  = document.getElementById('cards-sounds')
+export const appPage        = document.getElementById('app')
+export const minutes        = document.getElementById('minutes')
+export const seconds        = document.getElementById('seconds')

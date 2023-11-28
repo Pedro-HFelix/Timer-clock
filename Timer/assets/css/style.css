@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: clamp(40%,1% + 2vw,62.5%);
+    --bg-card-background-on: #02799D;
+    --bg-card-background-off: #E1E1E6;
+    --text-white:#FFFFFF;
+    --text-global:#323238;
+}
+
+html.dark{
+    background-color: black;
+    --text-global:var(--text-white);
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+
+#app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19.2rem;
+    height: 100vh;
+}
+
+#timer{
+    display: grid;
+    place-items: center;
+}
+
+#clock{
+    font-size: 12.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;    
+    color: var(--text-timer);
+}
+
+#controls{
+    display: flex;
+    gap: 4rem;
+}
+
+#controls button{
+    font-size: 6.5rem;
+    color: var(--text-timer);
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle{
+    display: none;
+}
+
+
+#cards-sounds{
+    display: grid;
+    grid-template-columns: repeat(2,3.2fr);
+    gap: 3.2rem;
+
+}
+
+.card{
+    width: 13.8rem;
+    height: 15.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.4rem;
+    background-color: var(--bg-card-background-off);
+    color: var(--text-global);
+}
+
+#cards-sounds button{
+    font-size: 5.6rem;
+    color: var(--text-global);
+}
+
+html:has(.tree-on) .ph-tree{
+    background-color: var(--bg-card-background-on);
+    color: var(--text-white);
+}
+html:has(.store-on) .ph-storefront{
+    background-color: var(--bg-card-background-on);
+    color: var(--text-white);
+}
+html:has(.fire-on) .ph-fire{
+    background-color: var(--bg-card-background-on);
+    color: var(--text-white);
+}
+html:has(.rain-on) .ph-cloud-rain{
+    background-color: var(--bg-card-background-on);
+    color: var(--text-white);
+}
+
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearance: none;
+}

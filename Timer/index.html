@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ <html lang="en" > 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module" src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app" class="offMusic">
+
+      <div id="timer">
+        <section id="clock">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+
+        <section id="controls">
+            <button data-action = "toggleRunning" class="ph ph-play-circle"></button>
+            <button data-action = "toggleRunning" class="ph ph-pause-circle"></button>
+            <button data-action = "reset" class="ph ph-stop-circle"></button>
+            <button data-action = "plus" class="ph ph-plus-circle"></button>
+            <button data-action = "minus" class="ph ph-minus-circle"></button>
+        </section>
+      </div>
+
+      <section id="cards-sounds">
+        <button data-action = "toggleMusictree" class="card ph ph-tree"></button>
+        <button data-action = "toggleMusicrain" class="card ph ph-cloud-rain"></button>
+        <button data-action = "toggleMusicstorefront" class="card ph ph-storefront"></button>
+        <button data-action = "toggleMusicfire" class="card ph ph-fire"></button>
+      </section>
+
+    </div>
+  </body>
+</html>
